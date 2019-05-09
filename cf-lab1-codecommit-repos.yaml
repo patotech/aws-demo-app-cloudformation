@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Laboratory for creating AWS Code Commit repositories for the workshop
+
+## ##########################################################################
+## Resources
+## ##########################################################################
+Resources:
+
+  LabInfraRepo:
+    Type: AWS::CodeCommit::Repository
+    Properties:
+      RepositoryName: LabInfraRepo
+      RepositoryDescription: Git Repository for infrastructure templates
